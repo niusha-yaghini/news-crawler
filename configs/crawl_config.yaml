@@ -1,0 +1,17 @@
+default_timeout_sec: 15
+max_retries: 3
+per_host_min_delay_sec: 2
+sources:
+  news_sites:
+  - article_selector_hint: a
+    name: reuters_world
+    start_urls:
+    - https://www.reuters.com/world/
+  reddit:
+    limit_per_sub: 20
+    subreddits:
+    - worldnews
+    - news
+    type: reddit_html
+user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+  Gecko) Chrome/140.0.0.0 Safari/537.36
