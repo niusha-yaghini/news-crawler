@@ -1,0 +1,17 @@
+# Core scraping
+requests
+beautifulsoup4
+lxml
+readability-lxml
+tldextract
+PyYAML
+
+# Data handling
+pandas
+
+# Language and text processing
+langdetect
+scikit-learn
+
+# Optional but useful
+regex
