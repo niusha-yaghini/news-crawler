@@ -7,11 +7,26 @@ sources:
     name: ap_world
     start_urls:
     - https://apnews.com/hub/world-news
+  npr_news:
+    article_selector_hint: a
+    include_patterns:
+    - /story/
+    - /202
+    - /sections/world/
+    limit_per_section: 50
+    start_urls:
+    - https://www.npr.org/sections/world/
+    type: news_html
   reddit:
-    limit_per_sub: 20
+    limit_per_sub: 50
     subreddits:
     - worldnews
     - news
+    - politics
+    - technology
+    - science
+    - environment
+    - economics
     type: reddit_html
 user_agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
   Gecko) Chrome/140.0.0.0 Safari/537.36
