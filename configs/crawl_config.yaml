@@ -4,9 +4,23 @@ per_host_min_delay_sec: 2
 sources:
   news_sites:
   - article_selector_hint: a
+    include_patterns:
+    - /article/
     name: ap_world
     start_urls:
     - https://apnews.com/hub/world-news
+  - article_selector_hint: a
+    include_patterns:
+    - /world/
+    name: guardian_world
+    start_urls:
+    - https://www.theguardian.com/world
+  - article_selector_hint: a
+    include_patterns:
+    - /news/
+    name: bbc_world
+    start_urls:
+    - https://www.bbc.com/news/world
   npr_news:
     article_selector_hint: a
     include_patterns:
